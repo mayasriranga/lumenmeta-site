@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LumenMeta | Engineered to Reveal Intelligence</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">LUMENMETA</div>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+            </div>
+            <div class="progress-text" id="progress-text">0%</div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h1 class="brand-name">LUMENMETA</h1>
+                <p class="tagline">Engineered to Reveal Intelligence.</p>
+                <div class="cta-group">
+                    <button class="btn btn-primary"
+                        onclick="document.getElementById('models').scrollIntoView({behavior: 'smooth'})">
+                        Explore the Device
+                    </button>
+                    <button class="btn btn-secondary"
+                        onclick="document.getElementById('performance').scrollIntoView({behavior: 'smooth'})">
+                        View Specifications
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Models Section -->
+    <section id="models">
+        <div class="section-container">
+            <h2 class="section-title">Choose your instrument.</h2>
+            <div class="models-grid">
+                <!-- Core Model -->
+                <div class="model-card">
+                    <div class="card-image-container">
+                        <img src="core.jpeg" alt="LumenMeta Core" class="model-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="model-name">Lumen Core</h3>
+                        <p class="model-tagline">The essential powerhouse.</p>
+                        <ul class="feature-list">
+                            <li>Neural Engine v1</li>
+                            <li>All-Day Battery</li>
+                            <li>Ceramic Shield</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Pro Model -->
+                <div class="model-card">
+                    <div class="card-image-container">
+                        <img src="pro.jpeg" alt="LumenMeta Pro" class="model-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="model-name">Lumen Pro</h3>
+                        <p class="model-tagline">Professional grade intelligence.</p>
+                        <ul class="feature-list">
+                            <li>Neural Engine v2 Pro</li>
+                            <li>Titanium Frame</li>
+                            <li>ProMotion Display</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Ultra Model -->
+                <div class="model-card">
+                    <div class="card-image-container">
+                        <img src="ultra.jpeg" alt="LumenMeta Ultra" class="model-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="model-name">Lumen Ultra</h3>
+                        <p class="model-tagline">Beyond boundaries.</p>
+                        <ul class="feature-list">
+                            <li>Quantum Neural Core</li>
+                            <li>Aerospace Titanium</li>
+                            <li>Holographic Ready</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section id="technology">
+        <div class="section-container">
+            <div class="content-split">
+                <div class="text-block fade-in">
+                    <h2 class="section-title-left">Neural Architecture.</h2>
+                    <p class="section-desc">
+                        Built on a 3nm process, the new Lumen Chipset redefines what's possible in a handheld device.
+                        With 16-core CPU and 32-core GPU, it learns from you, adapting performance in real-time.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section id="performance">
+        <div class="section-container">
+            <div class="performance-grid">
+                <div class="stat-card fade-in">
+                    <span class="stat-number">40%</span>
+                    <span class="stat-label">Faster Neural Engine</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <span class="stat-number">24<span class="small">hrs</span></span>
+                    <span class="stat-label">Battery Life</span>
+                </div>
+                <div class="stat-card fade-in">
+                    <span class="stat-number">2000<span class="small">nits</span></span>
+                    <span class="stat-label">Peak Brightness</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta">
+        <div class="cta-content fade-in">
+            <h2>Ready to ascend?</h2>
+            <button class="btn btn-primary large" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                Order Now
+            </button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2026 LumenMeta. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
